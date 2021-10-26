@@ -1,0 +1,22 @@
+{
+    "name": "Tw-Block",
+    "description": "Remova qualquer stream rodando sem sua permissão de suas paginas!",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "/images/icon.png",
+        "32": "/images/icon.png",
+        "48": "/images/icon.png",
+        "128": "/images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
